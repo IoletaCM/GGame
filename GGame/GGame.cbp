@@ -15,6 +15,7 @@
 					<Add option="-g" />
 					<Add option="-DSFML_STATIC" />
 					<Add directory="../../SFML-2.5.1/include" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add library="libsfml-graphics" />
@@ -37,6 +38,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -46,7 +48,11 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="include/Gladiator.h" />
+		<Unit filename="include/Weapon.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Gladiator.cpp" />
+		<Unit filename="src/Weapon.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
