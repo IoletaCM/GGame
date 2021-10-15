@@ -1,6 +1,7 @@
 #ifndef GLADIATOR_H
 #define GLADIATOR_H
 #include "Weapon.h"
+#include <random>
 
 
 class Gladiator
@@ -8,9 +9,11 @@ class Gladiator
     public:
         Gladiator();
         virtual ~Gladiator();
+        int DmgGenerator();
+        void Attack(Gladiator *target);
 
-        string Getname() { return m_name; }
-        void Setname(string val) { m_name = val; }
+        std::string Getname() { return m_name; }
+        void Setname(std::string val) { m_name = val; }
         int Gethp() { return m_hp; }
         void Sethp(int val) { m_hp = val; }
         int Getstamina() { return m_stamina; }
@@ -32,10 +35,11 @@ class Gladiator
         int Getcharisma() { return m_charisma; }
         void Setcharisma(int val) { m_charisma = val; }
 
+
     protected:
 
     private:
-        string m_name;
+        std::string m_name;
         int m_hp;
         int m_stamina;
         int m_armor;
@@ -46,7 +50,7 @@ class Gladiator
         int m_perception;
         int m_cardio;
         int m_charisma;
-        Weapon();
+        Weapon *m_weapon;
 };
 
 #endif // GLADIATOR_H

@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1633963187 source:c:\users\vincent\documents\per\dev\ggame\ggame\main.cpp
+1634287525 source:c:\users\vincent\documents\per\dev\ggame\ggame\main.cpp
 	<SFML/Graphics.hpp>
+	"Gladiator.h"
 
 1525812018 c:\users\vincent\documents\per\dev\sfml-2.5.1\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
@@ -410,4 +411,17 @@
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
+
+1634288043 c:\users\vincent\documents\per\dev\ggame\ggame\include\gladiator.h
+	"Weapon.h"
+	<random>
+
+1634287908 c:\users\vincent\documents\per\dev\ggame\ggame\include\weapon.h
+	<string>
+
+1634287811 source:c:\users\vincent\documents\per\dev\ggame\ggame\src\weapon.cpp
+	"Weapon.h"
+
+1634288060 source:c:\users\vincent\documents\per\dev\ggame\ggame\src\gladiator.cpp
+	"Gladiator.h"
 
